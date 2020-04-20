@@ -28,6 +28,7 @@ getNowFormatDate();
 randomSentence();
 
 function randomSentence() {
+  getNowFormatDate();
   var note = soul[Math.floor(Math.random() * soul.length)]
   document.getElementById('sentence').innerHTML = note.replace(/\*\*(.*?)\*\*/g,'<mark>$1</mark>').replace(/\'/g,'');
 }
