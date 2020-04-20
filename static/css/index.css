@@ -1,0 +1,36 @@
+mark {
+    color: #eaf82b;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(#ee9377, #ee9377);
+    background-image: -o-linear-gradient(#ee9377, #ee9377);
+    background-image: linear-gradient(#ee9377, #ee9377);
+    background-position: 0 85%;
+    background-size: 100% 20%;
+    background-repeat: no-repeat;
+}
+
+buttonX {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    width: 1rem;
+    height: 1rem;
+    color: transparent;
+    border-radius: 100%;
+    background-image: url(../images/refresh.gif);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,.2);
+    cursor: pointer;
+    outline: 0; 
+}
+footerbuttonX {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 0 0 .5rem;
+    padding-bottom: calc(constant(safe-area-inset-bottom) + .5rem);
+    padding-bottom: calc(env(safe-area-inset-bottom) + .5rem);
+    margin: .45rem 0 0;
+}
