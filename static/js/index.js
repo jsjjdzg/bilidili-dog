@@ -23,9 +23,11 @@ function getDogNotes(){
   }
 }
 
-getDogNotes();
-getNowFormatDate();
-randomSentence();
+window.onload = function(){
+  getDogNotes();
+  getNowFormatDate();
+  randomSentence();
+}
 
 function randomSentence() {
   getNowFormatDate();
@@ -75,7 +77,7 @@ function getWeather(){
 }
 
 function copytg(){
-  copyText(document.getElementById('sentence').innerHTML.replace('<mark>','').replace('</mark>',''));
+  copyText(document.getElementById('basicTitle').innerHTML+ '\n' + '\n' + document.getElementById('sentence').innerHTML.replace('<mark>','').replace('</mark>',''));
 };
 
 function copyText(text) {
@@ -99,3 +101,5 @@ function copyText(text) {
     currentFocus.focus();
     return flag;
 }
+
+randomSentence();
