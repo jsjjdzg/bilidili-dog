@@ -102,4 +102,5 @@ function copyText(text) {
     return flag;
 }
 
-randomSentence();
+var time1 = window.setTimeout(randomSentence,2000);
+window.clearTimeout(time1);
