@@ -1,8 +1,8 @@
-let soul = ['✨✨✨**开始我们的舔狗日记**✨✨']
+let soul = ['✨✨✨**开始我们的舔狗日记**✨✨✨']
 
 
 function getDogNotes(){
-  if(soul.length == 12){
+  if(soul.length == 1){
     $.get('http://bilidili.club:8999/dog/notes',
     function(data){
       for(var index in data){
